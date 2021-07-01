@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CTPH_CoreServiceAgent", "CTPH_CoreServiceAgent\CTPH_CoreServiceAgent.csproj", "{AD87A166-5809-44C0-A372-9FD19EE245B8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CTPH_CoreServiceAgentTest", "CTPH_CoreServiceAgentTest\CTPH_CoreServiceAgentTest\CTPH_CoreServiceAgentTest.csproj", "{1667363F-2CD9-49C4-B74D-5340BD36F63C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{AD87A166-5809-44C0-A372-9FD19EE245B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD87A166-5809-44C0-A372-9FD19EE245B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD87A166-5809-44C0-A372-9FD19EE245B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1667363F-2CD9-49C4-B74D-5340BD36F63C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1667363F-2CD9-49C4-B74D-5340BD36F63C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1667363F-2CD9-49C4-B74D-5340BD36F63C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1667363F-2CD9-49C4-B74D-5340BD36F63C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

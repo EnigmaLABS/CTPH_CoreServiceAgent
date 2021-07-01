@@ -11,7 +11,7 @@ namespace CTPH_CoreServiceAgent.Http
     {
         private readonly HttpClient client = new HttpClient();
 
-        public async Task<string> GetRequest(HttpMuestrasRequest request, string url)
+        public async Task<string> GetRequestMuestras(HttpMuestrasRequest request, string url)
         {
             string result;
 
@@ -24,6 +24,26 @@ namespace CTPH_CoreServiceAgent.Http
             }
             catch
             {
+                result = "";
+            }
+
+            return result;
+        }
+
+        public async Task<string> GetRequestAdmin(HttpAdminRequest request, string url)
+        {
+            string result;
+
+            try
+            {
+                HttpResponseMessage response = await client.GetAsync(request.getUrl(url)).ConfigureAwait(false);
+                response.EnsureSuccessStatusCode();
+
+                result = await response.Content.ReadAsStringAsync();
+            }
+            catch (Exception ex)
+            {
+                string err = ex.Message;
                 result = "";
             }
 

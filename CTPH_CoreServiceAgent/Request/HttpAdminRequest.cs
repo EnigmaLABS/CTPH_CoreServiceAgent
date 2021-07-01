@@ -1,10 +1,10 @@
 ﻿namespace CTPH_CoreServiceAgent.Request
 {
-    public class HttpMuestrasRequest
+    public class HttpAdminRequest
     {
-        private string _urlbase; // = @"https://localhost:44355/api/Muestras";
+        private string _urlbase; 
 
-        public HttpMuestrasRequest(string urlbase)
+        public HttpAdminRequest(string urlbase)
         {
             _urlbase = urlbase;
         }

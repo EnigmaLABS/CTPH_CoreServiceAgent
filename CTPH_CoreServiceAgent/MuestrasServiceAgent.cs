@@ -21,7 +21,7 @@ namespace CTPH_CoreServiceAgent
 
         public IEnumerable<IMuestraInfo> Get()
         {
-            string result = requestObject.GetRequest(request, "").Result;
+            string result = requestObject.GetRequestMuestras(request, "").Result;
 
             var ObjResult = JsonConvert.DeserializeObject<IEnumerable<IMuestraInfo>>(result);
 
@@ -31,7 +31,7 @@ namespace CTPH_CoreServiceAgent
         public IEnumerable<IElemento> GetElementos()
         {
 
-            var result = requestObject.GetRequest(request, "Muestras/GetElementos").Result;
+            var result = requestObject.GetRequestMuestras(request, "Muestras/GetElementos").Result;
 
             var ObjResult = JsonConvert.DeserializeObject<IEnumerable<Elemento>>(result);
 
@@ -42,7 +42,7 @@ namespace CTPH_CoreServiceAgent
         {
             string qs = "?idElemento=" + idElemento.ToString();
 
-            var result = requestObject.GetRequest(request, "Muestras/GetElemento_ListaValores" + qs).Result;
+            var result = requestObject.GetRequestMuestras(request, "Muestras/GetElemento_ListaValores" + qs).Result;
 
             var ObjResult = JsonConvert.DeserializeObject<IEnumerable<ListaValores>>(result);
 
@@ -51,7 +51,7 @@ namespace CTPH_CoreServiceAgent
 
         public IEnumerable<IPuntoMedidaInfo> GetPuntosDeMedida()
         {
-            string result = requestObject.GetRequest(request, "Muestras/GetPuntosDeMedida").Result;
+            string result = requestObject.GetRequestMuestras(request, "Muestras/GetPuntosDeMedida").Result;
 
             var ObjResult = JsonConvert.DeserializeObject<IEnumerable<PuntoMedida>>(result);
 
